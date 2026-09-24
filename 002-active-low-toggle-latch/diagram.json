@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "author": "Victoria Cheng",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 32.75,
+      "left": 124.8,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -3.6,
+      "left": 196.2,
+      "attrs": { "color": "green", "label": "Latch State", "flip": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 169.8,
+      "left": 172.8,
+      "attrs": { "color": "blue", "label": "Toggle" }
+    }
+  ],
+  "connections": [
+    [ "esp:23", "r1:1", "green", [ "h0" ] ],
+    [ "r1:2", "led1:A", "green", [ "h0" ] ],
+    [ "led1:C", "esp:GND.1", "black", [ "h38", "v211.2", "h-278.4", "v-96" ] ],
+    [ "esp:19", "btn1:1.l", "blue", [ "h0" ] ],
+    [ "esp:GND.1", "btn1:2.l", "black", [ "h-14.21", "v86.4", "h182.4" ] ]
+  ],
+  "dependencies": {}
+}
