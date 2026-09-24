@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "author": "Victoria Cheng",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": -4.76, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_red",
+      "top": 3.95,
+      "left": 144,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_red",
+      "top": -32.4,
+      "left": 225,
+      "attrs": { "color": "red", "flip": "1" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_yellow",
+      "top": 42.35,
+      "left": 144,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_yellow",
+      "top": 6,
+      "left": 253.8,
+      "attrs": { "color": "yellow", "flip": "1" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_green",
+      "top": 71.15,
+      "left": 163.2,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_green",
+      "top": 44.4,
+      "left": 282.6,
+      "attrs": { "color": "green", "flip": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn",
+      "top": 111.8,
+      "left": 192,
+      "attrs": { "color": "green", "label": "Mode" }
+    }
+  ],
+  "connections": [
+    [ "esp:23", "r_red:1", "red", [ "h24.04", "v-28.8" ] ],
+    [ "r_red:2", "led_red:A", "red", [ "h0" ] ],
+    [ "led_red:C", "esp:GND.1", "black", [ "h66.8", "v-76.8", "h-355.2", "v220.8" ] ],
+    [ "esp:22", "r_yellow:1", "orange", [ "h33.64", "v-19.2" ] ],
+    [ "r_yellow:2", "led_yellow:A", "orange", [ "h56.4" ] ],
+    [ "led_yellow:C", "esp:GND.1", "black", [ "h47.6", "v-105.6", "h-355.2", "v211.2" ] ],
+    [ "esp:21", "r_green:1", "green", [ "h43.24", "v-9.6" ] ],
+    [ "r_green:2", "led_green:A", "green", [ "v9.6", "h66" ] ],
+    [ "led_green:C", "esp:GND.1", "black", [ "h28.4", "v-134.4", "h-355.2", "v201.6" ] ],
+    [ "esp:19", "btn:1.l", "blue", [ "h28.8", "v28.8" ] ],
+    [ "esp:GND.1", "btn:2.l", "black", [ "h-19.05", "v67.2", "h144", "v-77" ] ]
+  ],
+  "dependencies": {}
+}
