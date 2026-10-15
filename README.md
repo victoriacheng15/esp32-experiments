@@ -15,5 +15,5 @@ A progressive embedded firmware laboratory built on the ESP32 platform, focusing
 
 | Index | Project | Architecture / Concepts | Hardware |
 | :---: | :--- | :--- | :--- |
-| **001** | [`001-fsm-mode-controller`](001-fsm-mode-controller) | Non-blocking FSM (`millis()`) | 3x LEDs, 1x Button |
-| **002** | [`002-active-low-toggle-latch`](002-active-low-toggle-latch) | Active-Low edge detection & latch | 1x LED, 1x Button |
+| **001** | [FSM Mode Controller](001-fsm-mode-controller/README.md) | Non-blocking FSM (`millis()`) | 3x LEDs, 1x Button |
+| **002** | [Active-Low Toggle Latch](002-active-low-toggle-latch/README.md) | Active-Low edge detection & latch | 1x LED, 1x Button |
