@@ -7,7 +7,7 @@ A progressive embedded firmware laboratory built on the ESP32 platform, focusing
 ## Verification Methodology: Simulation vs. Physical Bench
 
 * **Simulation (Wokwi):** Logic verification, protocol decoding, and state transition validation in an ideal digital environment prior to flashing.
-* **Physical Bench:** Contact chatter, signal integrity, and electrical realities verified via unlisted YouTube video demonstrations.
+* **Physical Bench:** Contact chatter, signal integrity, and electrical realities.
 
 ---
 
@@ -15,5 +15,4 @@ A progressive embedded firmware laboratory built on the ESP32 platform, focusing
 
 | Index | Project | Architecture / Concepts | Hardware |
 | :---: | :--- | :--- | :--- |
-| **001** | [FSM Mode Controller](001-fsm-mode-controller/README.md) | Non-blocking FSM (`millis()`) | 3x LEDs, 1x Button |
-| **002** | [Active-Low Toggle Latch](002-active-low-toggle-latch/README.md) | Active-Low edge detection & latch | 1x LED, 1x Button |
+
