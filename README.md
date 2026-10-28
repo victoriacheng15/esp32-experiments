@@ -1,13 +1,13 @@
 # ESP32 Experiments
 
-A progressive embedded firmware laboratory built on the ESP32 platform, focusing on low-level firmware engineering principles: deterministic non-blocking timing, finite state machine (FSM) architecture, hardware interrupts, signal conditioning, peripheral offloading, and real-time task orchestration.
+A collection of hands-on experiments exploring the ESP32 and understanding how hardware works. Each project covers wiring circuits, writing firmware, and observing physical component behavior.
 
 ---
 
-## Verification Methodology: Simulation vs. Physical Bench
+## Bench Notes: Simulation vs. Hardware
 
-* **Simulation (Wokwi):** Logic verification, protocol decoding, and state transition validation in an ideal digital environment prior to flashing.
-* **Physical Bench:** Contact chatter, signal integrity, and electrical realities.
+* **Simulation (Wokwi):** Quick logic checks and circuit testing in a digital environment.
+* **Physical Bench:** Testing on a breadboard to observe contact bounce and electrical behavior.
 
 ---
 
@@ -15,4 +15,5 @@ A progressive embedded firmware laboratory built on the ESP32 platform, focusing
 
 | Index | Project | Architecture / Concepts | Hardware |
 | :---: | :--- | :--- | :--- |
+| 001 | [LED Pattern Sequencer](001-led-pattern-sequencer/README.md) | Non-blocking FSM timing, bitwise GPIO masking, software switch debouncing | 8x LEDs, 8x 220Ω Resistors, 1x Pushbutton |
 
